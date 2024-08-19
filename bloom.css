@@ -1,0 +1,67 @@
+nav {
+  display: flex; 
+}
+
+.logo {
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+  }
+  
+  .logo img {
+    width: 100px; 
+    height: 50px; 
+  }
+
+/* Style for list items */
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+ 
+}
+ul {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Align list items horizontally */
+  flex-grow: 1; /* Allow the <ul> to grow and take available space */
+  justify-content: center; /* Center the list items */
+}
+
+
+/* Style for anchor tags */
+a {
+ 
+  color: rgb(255, 125, 207);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  transition: color 0.3s; /* Optional: smooth color transition */
+}
+
+/* Underline effect */
+a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: #f700ff;
+  transition: width 0.3s; /* Smooth transition for the underline */
+}
+li:hover a::after {
+  width: 100%;
+}
+body {
+  background-image: url('Black\ and\ Pink\ Flower\ Shop\ Logo\ \(1\).png');
+  background-size: cover; /* Resize the image to cover the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+
+}
